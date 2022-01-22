@@ -1,1 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="css/styles.css" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Index - Kokoa Clone</title>
+  </head>
+  <body>
+    <div class="status-bar">
+      <div class="status-bar__column">
+        <span>No Service</span>
+        <i class="fas fa-wifi"></i>
+      </div>
+      <div class="status-bar__column">
+        <span>18:43</span>
+      </div>
+      <div class="status-bar__column">
+        <span>23%</span>
+        <i class="fas fa-battery-quarter"></i>
+        <i class="fas fa-bolt"></i>
+      </div>
+    </div>
 
+    <header class="index-header">
+      <h1 class="index-header__title">Welcome to Kokoa Clone</h1>
+      <p class="index-header__text1">If you have a Kakao Account,</p>
+      <p class="index-header__text2">log in with your email or phone number.</p>
+    </header>
+
+    <!--Username, Password 등 개인정보를 get 방식으로 전송하면 안 된다-->
+
+    <form action="friends.html" method="get" id="login-form">
+      <input name="username" type="text" placeholder="Email or phone number" />
+      <input name="password" type="password" placeholder="Password" />
+      <input type="submit" value="Log In" />
+      <input type="submit" value="Sign Up" />
+      <a href="#">Find Kokoa Account or Password</a>
+  
+      <div id="no-mobile">
+        <span>Your screen is too big.</span>
+      </div>
+
+    <script
+      src="https://kit.fontawesome.com/405588dbc6.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

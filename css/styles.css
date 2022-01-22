@@ -1,0 +1,39 @@
+@import "reset.css";
+@import "variables.css";
+
+/*components*/
+@import "components/status-bar.css";
+@import "components/nav-bar.css";
+@import "components/screen-header.css";
+@import "components/user-components.css";
+@import "components/badge.css";
+@import "components/icon-row.css";
+@import "components/alt-screen.css";
+@import "components/no-mobile.css";
+/*screens*/
+@import "screens/login-form-id.css";
+@import "screens/friends.css";
+@import "screens/find.css";
+@import "screens/more.css";
+@import "screens/settings.css";
+@import "screens/chat.css";
+
+body {
+  font-family: -appsle-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  color: #2e363e;
+  height: 100vh;
+}
+
+input:foucs {
+  outline: none;
+}
+
+.nav__link {
+  position: relative;
+  color: #2e363e;
+}
+
+.main-screen {
+  margin: 0px var(--horizontal-space);
+}

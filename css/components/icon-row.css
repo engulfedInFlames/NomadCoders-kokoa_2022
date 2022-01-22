@@ -1,0 +1,26 @@
+.icon-row {
+  display: flex;
+  justify-content: space-around;
+  margin: 0 15px;
+}
+
+.icon-row__icon {
+  display: flex;
+  flex-direction: column;
+  /*column으로 설정하여 main-axis가 가로, cross-axis가 세로*/
+  align-items: center;
+}
+
+.icon-row__icon i {
+  font-size: 35px;
+}
+
+.icon-row__icon span {
+  margin-top: 20px;
+  font-size: 20px;
+}
+
+.second-row {
+  padding-top: 45px;
+  width: 49.5%;
+}
