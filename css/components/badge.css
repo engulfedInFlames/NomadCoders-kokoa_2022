@@ -1,13 +1,14 @@
 .badge {
   background-color: tomato;
-  width: 25px;
-  height: 25px;
+  width: 15px;
+  height: 15px;
   border-radius: 50%;
   /*display:flex를 선언하면 in-line에서 block으로 바뀐다*/
   display: flex;
   justify-content: center;
   align-items: center;
   color: white;
+  font-size: 10px;
   font-weight: 600;
 }
 

@@ -2,18 +2,24 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 50px var(--horizontal-space);
-  padding-bottom: 30px;
-  top: 0;
-}
-
-.alt-header__title {
-  font-size: 28px;
-  font-weight: 650;
+  padding: 40px var(--horizontal-space) 30px var(--horizontal-space);
 }
 
 .alt-header__column {
   width: 33%;
+}
+
+.alt-header__column a {
+  color: inherit;
+}
+
+.alt-header__column i {
+  font-size: 20px;
+}
+
+.alt-header__title {
+  font-size: 20px;
+  font-weight: 600;
 }
 
 .alt-header__column:first-child {

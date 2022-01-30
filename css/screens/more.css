@@ -4,32 +4,33 @@
 
 .more-suggestions {
   margin-top: 50px;
-  padding-top: 35px;
+  padding-top: 10px;
   border-top: var(--border-line);
 }
 
 .more-suggestions__title {
-  font-size: 20px;
-  font-weight: 650;
+  font-size: 16px;
+  font-weight: 600;
 }
 
 .more-suggestions-icons {
-  margin-top: 55px;
   display: flex;
+  justify-content: space-around;
+  margin-top: 30px;
 }
 
 .more-suggestions-icons__icon {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 150px;
+  width: 33%;
 }
 
 .more-suggestions-icons__icon-img {
-  margin-bottom: 20px;
-  width: 60px;
-  height: 60px;
-  background-color: var(--yellow);
+  margin-bottom: 10px;
+  width: 50px;
+  height: 50px;
+  background-color: grey;
   border-radius: 5px;
   display: flex;
   justify-content: center;
@@ -37,10 +38,11 @@
 }
 
 .more-suggestions-icons__icon-img i {
-  font-size: 36px;
+  font-size: 32px;
   color: white;
 }
 
 .more-suggestions-icons__icon span {
-  font-size: 18px;
+  text-align: center;
+  font-size: 14px;
 }

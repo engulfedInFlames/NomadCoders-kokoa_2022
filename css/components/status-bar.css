@@ -1,36 +1,32 @@
 .status-bar {
+  position: fixed;
   display: flex;
   justify-content: space-between;
-  position: fixed;
+  box-sizing: border-box;
   top: 0px;
   width: 100%;
   padding: 5px 3px;
+  background-color: whitesmoke;
 }
 
 .status-bar__column {
+  display: flex;
+  align-items: center;
   width: 33%;
+  font-size: 12px;
+  font-weight: 500;
 }
 
 .status-bar__column:first-child span {
   margin-right: 10px;
-  font-size: 18px;
-  font-weight: 500;
 }
 
 .status-bar__column:nth-child(2) {
-  display: flex;
   justify-content: center;
-  font-size: 18px;
-  font-weight: 500;
 }
 
 .status-bar__column:last-child {
-  display: flex;
   justify-content: flex-end;
-  align-items: center;
-  margin-right: 10px;
-  font-size: 18px;
-  font-weight: 500;
 }
 
 .status-bar__column .fa-battery-quarter {
@@ -38,27 +34,28 @@
 }
 
 .index-header {
-  margin: 90px 0;
-  /*text일 때는 display:flex대신 text-align: center*/
-  text-align: center;
+  margin: 110px 0;
   display: flex;
   flex-direction: column;
   align-items: center;
+  text-align: center;
 }
 
 .index-header__title {
-  margin-bottom: 40px;
-  font-size: 25px;
+  margin: 10px 0 20px 0;
+  font-size: 24px;
   font-weight: 500;
   text-decoration: double;
 }
 
 .index-header__text1 {
   width: 50%;
+  font-size: 13px;
   opacity: 0.6;
 }
 
 .index-header__text2 {
   width: 70%;
+  font-size: 13px;
   opacity: 0.6;
 }

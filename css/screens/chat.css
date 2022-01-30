@@ -1,11 +1,5 @@
-#chat-screen {
-  background-color: #abc1d1;
-  height: 500vh;
-}
-
-#chat-screen .alt-header,
-#chat-screen .status-bar {
-  background-color: #abc1d1;
+#chat-screen .alt-header {
+  background-color: whitesmoke;
 }
 
 #chat-screen .alt-header {
@@ -21,7 +15,7 @@
 }
 
 .main-chat {
-  padding-top: 130px;
+  padding-top: 110px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -37,15 +31,19 @@
 }
 
 .chat__timestamp {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   color: white;
   background-color: rgba(0, 0, 0, 0.2);
-  padding: 10px;
+  padding: 8px;
   border-radius: 20px;
-  margin-bottom: 25px;
-  animation: centerFadeIn 0.3s ease-in-out;
+  margin-bottom: 40px;
+  animation: centerFadeIn 0.3s linear;
 }
 
 .chat__timestamp span {
+  font-size: 12px;
   opacity: 0.8;
 }
 
@@ -63,13 +61,14 @@
 .message-row {
   width: 100%;
   display: flex;
-  margin-bottom: 25px;
+  align-items: center;
+  margin-bottom: 20px;
   animation: leftFadeIn 0.3s ease-in-out;
 }
 
 .message-row img {
-  width: 60px;
-  height: 60px;
+  width: 50px;
+  height: 50px;
   border-radius: 50%;
 }
 
@@ -79,25 +78,28 @@
 
 .message__sender {
   display: block;
+  font-size: 16px;
+  opacity: 0.9;
 }
 
 .message__info {
   display: flex;
-  align-items: flex-end;
+  align-items: center;
 }
 
 .message__bubble {
   background-color: white;
-  padding: 10px 10px;
-  border-radius: 15px;
+  padding: 6px 10px;
+  border-radius: 12px;
   border-top-left-radius: 0px;
-  margin-top: 8px;
-  margin-right: 4px;
-  font-size: 18px;
+  margin-top: 6px;
+  margin-right: 6px;
+  font-size: 14px;
 }
 
-.message__time,
-.message__sender {
+.message__time {
+  margin-top: 16px;
+  font-size: 10px;
   opacity: 0.8;
 }
 
@@ -122,9 +124,10 @@
 }
 
 .message-row--own .message__bubble {
-  background-color: var(--yellow);
+  background-color: gray;
+  color: whitesmoke;
   border-top-right-radius: 0px;
-  border-top-left-radius: 15px;
+  border-top-left-radius: 12px;
   margin-left: 5px;
 }
 
@@ -184,16 +187,17 @@
 
 .reply__column:last-child > i {
   right: 20px;
-  top: 8px;
+  top: 9px;
 }
 
 .reply__column:last-child button {
   top: 4px;
   right: -15px;
-  background-color: var(--yellow);
-  border: none;
   width: 25px;
   height: 25px;
+  color: whitesmoke;
+  background-color: rgba(0, 0, 0, 0.8);
+  border: none;
   border-radius: 50%;
 }
 
@@ -201,23 +205,13 @@
   opacity: 1;
 }
 
-.reply__column button:focus,
-.reply__column button:active {
-  outline: none;
-}
-
 .reply__column i,
 .reply__column button {
   transition: opacity 0.3s ease-in-out;
 }
 
-.reply:focus-within i,
-.reply:focus-within button {
-  opacity: 0;
-}
-
 .reply input:focus {
-  width: 91vw;
+  width: 90vw;
   transform: translateX(-11%) translateY(-80px);
 }
 

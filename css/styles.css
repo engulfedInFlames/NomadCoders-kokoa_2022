@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New&display=swap");
 @import "reset.css";
 @import "variables.css";
 
@@ -19,14 +20,14 @@
 @import "screens/chat.css";
 
 body {
-  font-family: -appsle-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
-    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-family: "Zen Kaku Gothic New", sans-serif;
   color: #2e363e;
-  height: 100vh;
+  background-color: whitesmoke;
+  height: 120vh;
 }
 
-input:foucs {
-  outline: none;
+.main-screen {
+  margin: 0px var(--horizontal-space);
 }
 
 .nav__link {
@@ -34,6 +35,6 @@ input:foucs {
   color: #2e363e;
 }
 
-.main-screen {
-  margin: 0px var(--horizontal-space);
+input:foucs {
+  outline: none;
 }

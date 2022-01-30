@@ -2,12 +2,12 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 50px var(--horizontal-space);
+  padding: 40px var(--horizontal-space) 30px var(--horizontal-space);
 }
 
 .screen-header__title {
-  font-size: 32px;
-  font-weight: 650;
+  font-size: 24px;
+  font-weight: 600;
 }
 
 .screen-header__icons {
@@ -15,12 +15,15 @@
 }
 
 .screen-header__icons span :not([class="dot"]) {
-  margin-left: 25px;
+  margin-left: 15px;
   margin-top: 5px;
+  font-size: 16px;
 }
 
 .go-settings {
-  margin-left: 25px;
+  margin-left: 15px;
+  font-size: 14px;
+  color: inherit;
 }
 
 @keyframes rotateCog {
