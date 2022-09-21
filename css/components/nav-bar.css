@@ -11,12 +11,10 @@
   padding으로 좌우 50px를 설정하면 content의 크기
   가 150px로 감소한다.*/
 }
-
 .nav__ulist {
   display: flex;
   justify-content: space-between;
 }
-
 @keyframes notoficationAnimation {
   0% {
     transform: none;
@@ -28,9 +26,11 @@
     transform: none;
   }
 }
-
+.nav__link{
+  position:relaitve;
+}
 .nav__notification {
-  /*가장 가까운 relatie를 기준으로 움직인다.
+  /*가장 가까운 relative를 기준으로 움직인다.
   처음에는 body이지만, nav__link에 position:relative
   를 선언하면 nav__link를 기준으로 움직이게 된다. */
   position: absolute;
@@ -38,7 +38,6 @@
   bottom: 12px;
   animation: notoficationAnimation 2s ease-in-out infinite;
 }
-
 @keyframes appearBtnAnimation {
   from {
     opacity: 0;

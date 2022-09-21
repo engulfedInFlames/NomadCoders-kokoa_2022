@@ -8,7 +8,6 @@
   padding: 5px 3px;
   background-color: whitesmoke;
 }
-
 .status-bar__column {
   display: flex;
   align-items: center;
@@ -29,33 +28,6 @@
   justify-content: flex-end;
 }
 
-.status-bar__column .fa-battery-quarter {
+.status-bar__column .fa-battery-three-quarters {
   margin: 0px 5px;
-}
-
-.index-header {
-  margin: 110px 0;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-}
-
-.index-header__title {
-  margin: 10px 0 20px 0;
-  font-size: 24px;
-  font-weight: 500;
-  text-decoration: double;
-}
-
-.index-header__text1 {
-  width: 50%;
-  font-size: 13px;
-  opacity: 0.6;
-}
-
-.index-header__text2 {
-  width: 70%;
-  font-size: 13px;
-  opacity: 0.6;
 }

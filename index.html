@@ -11,33 +11,34 @@
     <div class="status-bar">
       <div class="status-bar__column">
         <span>No Service</span>
+        <!-- icon -->
         <i class="fas fa-wifi"></i>
       </div>
       <div class="status-bar__column">
         <span>18:43</span>
       </div>
       <div class="status-bar__column">
-        <span>23%</span>
-        <i class="fas fa-battery-quarter"></i>
+        <span>78%</span>
+        <!-- icon -->
+        <i class="fa fa-battery-three-quarters"></i>
         <i class="fas fa-bolt"></i>
       </div>
     </div>
 
     <header class="index-header">
       <h1 class="index-header__title">Welcome to Kokoa Clone</h1>
-      <p class="index-header__text1">If you have a Kakao Account,</p>
-      <p class="index-header__text2">log in with your email or phone number.</p>
+      <p class="index-header__text">If you have a Kakao Account, </br> log in with your email or phone number.</p>
     </header>
 
     <!--Username, Password 등 개인정보를 get 방식으로 전송하면 안 된다-->
 
-    <form action="friends.html" method="get" id="login-form">
+    <form action="friends.html" method="get" class="login-form">
       <input name="username" type="text" placeholder="Email or phone number" />
       <input name="password" type="password" placeholder="Password" />
       <input type="submit" value="Log In" />
-      <div id="help">
-        <div id="sing-up"><a href="#">Sing up</a></div>
-        <div id="find-pw"><a href="#">Find ID/PW</a></div>
+      <div class="help">
+        <div class="help__sing-up"><a href="#">Sing up</a></div>
+        <div class="help__find-pw"><a href="#">Find ID/PW</a></div>
       </div>
     </form>
 

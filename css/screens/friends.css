@@ -9,32 +9,23 @@
 
 #friends-display-link i {
   color: rgba(0, 0, 0, 0.3);
-  font-size: 14px;
   margin: 0px 15px;
 }
-
-#friends-display-link i:first-child {
-  margin-top: 1px;
+#friends-display-link i {
+  margin-top: 4px;
 }
-
-#friends-display-link i:last-child {
-  margin-top: 3px;
-}
-
 .friends-screen__channel {
   margin-top: 15px;
   border-top: var(--border-line);
   padding-top: 10px;
 }
-
 .friedns-screen__channel-header {
-  margin-bottom: 30px;
   display: flex;
   justify-content: space-between;
   color: rgba(0, 0, 0, 0.5);
   font-weight: 600;
+  margin-bottom: 30px;
 }
-
 @keyframes hideSplashScreen {
   from {
     opacity: 1;
@@ -46,8 +37,7 @@
     js를 사용해야 한다.*/
   }
 }
-
-#splash-screen {
+.splash-screen {
   background-color: whitesmoke;
   position: absolute;
   height: 100vh;
@@ -57,6 +47,6 @@
   justify-content: center;
   align-items: center;
   font-size: 128px;
-  animation: hideSplashScreen 0.3s ease-in-out forwards;
-  animation-delay: 1.5s;
+  animation: hideSplashScreen 0.3s linear forwards;
+  animation-delay: 1s;
 }

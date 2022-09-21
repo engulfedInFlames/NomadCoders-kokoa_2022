@@ -1,0 +1,83 @@
+.index-header {
+  margin: 110px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.index-header__title {
+  margin: 10px 0 20px 0;
+  font-size: 24px;
+  font-weight: 500;
+  text-decoration: double;
+}
+.index-header__text {
+  width: 50%;
+  font-size: 13px;
+  opacity: 0.6;
+}
+.login-form {
+  display: flex;
+  flex-direction: column;
+  margin: 0 30px;
+}
+
+.login-form input {
+  border: none;
+  font-size: 13px;
+  padding: 8px 0;
+  margin-bottom: 10px;
+}
+.login-form input::placeholder {
+  color: rgba(0, 0, 0, 0.2);
+}
+.login-form input:not([type="submit"]) {
+  background-color: whitesmoke;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  transition: border-bottom 0.3s linear;
+}
+.login-form input:focus {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+}
+.login-form input[type="submit"] {
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+  padding: 15px 0px;
+  margin-top: 10px;
+  margin-bottom: 40px;
+}
+.help {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.help__sing-up {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 25%;
+}
+.help__sing-up a {
+  font-size: 13px;
+  text-decoration: none;
+  color: inherit;
+}
+
+.help__find-pw {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  text-decoration: none;
+  color: inherit;
+  font-size: 13px;
+  width: 25%;
+}
+.help__find-pw a {
+  font-size: 13px;
+  text-decoration: none;
+  color: inherit;
+}
